@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SA CIVIL - Structural Design Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen relative overflow-x-hidden pb-20 selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Watermark -->
+    <div id="watermark" class="watermark">
+        <div class="flex items-center gap-2 text-slate-800">
+            <span class="font-bold text-lg tracking-wider">SA CIVIL</span>
+            <i data-lucide="user-check" class="w-5 h-5"></i>
+        </div>
+        <div class="text-[10px] text-slate-500 uppercase tracking-[0.2em]">Eng. Sohaib Al-Nuaimi</div>
+    </div>
+
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button onclick="toggleLanguage()" class="lang-btn">
+            <i data-lucide="languages" class="w-4 h-4"></i>
+            <span id="lang-label">English</span>
+        </button>
+    </div>
+
+    <!-- Main Container -->
+    <div id="app-container" class="app-container">
+        <!-- Content will be injected here by JavaScript -->
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title" class="modal-title"></h3>
+                <button onclick="closeModal()" class="modal-close-btn">
+                    <i data-lucide="x" class="w-5 h-5 text-slate-500"></i>
+                </button>
+            </div>
+            <div id="modal-content" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
